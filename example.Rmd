@@ -1,0 +1,19 @@
+---
+title: "Example"
+author: "Your Name"
+date: "2023-01-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Test Drive
+
+It is convenient to *run* `R` code and **embed** plots with Markdown:
+
+```{r mpg, message=FALSE}
+library(ggplot2)
+ggplot(mpg, aes(x = displ, y = hwy)) + geom_point(aes(color = class)) + geom_smooth()
+```
